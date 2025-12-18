@@ -1,0 +1,434 @@
+{
+    "0": {
+        "temperatura": {
+            "media": 27.440895061728394,
+            "desvio_padrao": 2.882209372742826
+        },
+        "umidade_ar": {
+            "media": 54.589814814814815,
+            "desvio_padrao": 13.5207678985199
+        },
+        "umidade_solo": {
+            "media": 32.584362139917694,
+            "desvio_padrao": 44.886565800401456
+        },
+        "luminosidade_lux": {
+            "media": 1.973508230452675,
+            "desvio_padrao": 13.18341716424491
+        }
+    },
+    "1": {
+        "temperatura": {
+            "media": 26.733578680203046,
+            "desvio_padrao": 2.944886297216113
+        },
+        "umidade_ar": {
+            "media": 56.0089847715736,
+            "desvio_padrao": 12.99621775919631
+        },
+        "umidade_solo": {
+            "media": 32.26928934010152,
+            "desvio_padrao": 45.03357266161823
+        },
+        "luminosidade_lux": {
+            "media": 0.2705583756345178,
+            "desvio_padrao": 1.1566320099283327
+        }
+    },
+    "2": {
+        "temperatura": {
+            "media": 26.135995955510616,
+            "desvio_padrao": 3.042228463936461
+        },
+        "umidade_ar": {
+            "media": 57.5528058645096,
+            "desvio_padrao": 12.63868360832843
+        },
+        "umidade_solo": {
+            "media": 32.169615773508596,
+            "desvio_padrao": 44.99254942623898
+        },
+        "luminosidade_lux": {
+            "media": 0.21081900910010112,
+            "desvio_padrao": 0.8575060045066659
+        }
+    },
+    "3": {
+        "temperatura": {
+            "media": 25.609628506444277,
+            "desvio_padrao": 3.153408413017317
+        },
+        "umidade_ar": {
+            "media": 58.96322971948446,
+            "desvio_padrao": 12.037609582895536
+        },
+        "umidade_solo": {
+            "media": 32.0988122314885,
+            "desvio_padrao": 44.894681734396244
+        },
+        "luminosidade_lux": {
+            "media": 0.17235279251958555,
+            "desvio_padrao": 0.5018810409321407
+        }
+    },
+    "4": {
+        "temperatura": {
+            "media": 25.128055342044583,
+            "desvio_padrao": 3.265299828150659
+        },
+        "umidade_ar": {
+            "media": 60.49262106072253,
+            "desvio_padrao": 11.609408769841671
+        },
+        "umidade_solo": {
+            "media": 32.41634640020497,
+            "desvio_padrao": 44.96319594421757
+        },
+        "luminosidade_lux": {
+            "media": 0.17243146297719703,
+            "desvio_padrao": 0.4847636574051697
+        }
+    },
+    "5": {
+        "temperatura": {
+            "media": 24.628717686204247,
+            "desvio_padrao": 3.3585436016707417
+        },
+        "umidade_ar": {
+            "media": 61.85774251343742,
+            "desvio_padrao": 11.097894161068742
+        },
+        "umidade_solo": {
+            "media": 32.25697466086511,
+            "desvio_padrao": 44.84393486268103
+        },
+        "luminosidade_lux": {
+            "media": 0.18530842078320964,
+            "desvio_padrao": 0.49364541114958416
+        }
+    },
+    "6": {
+        "temperatura": {
+            "media": 24.13580497714576,
+            "desvio_padrao": 3.436888870033299
+        },
+        "umidade_ar": {
+            "media": 62.84268664296597,
+            "desvio_padrao": 10.63307479028949
+        },
+        "umidade_solo": {
+            "media": 32.59624174707974,
+            "desvio_padrao": 44.606392564883464
+        },
+        "luminosidade_lux": {
+            "media": 0.1622651091924835,
+            "desvio_padrao": 0.47687509266799905
+        }
+    },
+    "7": {
+        "temperatura": {
+            "media": 23.75499115491534,
+            "desvio_padrao": 3.5171562015899656
+        },
+        "umidade_ar": {
+            "media": 63.84212787465251,
+            "desvio_padrao": 10.452018872178334
+        },
+        "umidade_solo": {
+            "media": 32.596916856204196,
+            "desvio_padrao": 44.53074080042902
+        },
+        "luminosidade_lux": {
+            "media": 0.16123325751832196,
+            "desvio_padrao": 0.48201558553380847
+        }
+    },
+    "8": {
+        "temperatura": {
+            "media": 23.391639302854255,
+            "desvio_padrao": 3.5571552576837977
+        },
+        "umidade_ar": {
+            "media": 64.92682495579692,
+            "desvio_padrao": 10.146094407731232
+        },
+        "umidade_solo": {
+            "media": 32.806516797171,
+            "desvio_padrao": 44.524912807347825
+        },
+        "luminosidade_lux": {
+            "media": 0.5051780752715332,
+            "desvio_padrao": 1.0256493093030419
+        }
+    },
+    "9": {
+        "temperatura": {
+            "media": 23.11716380182002,
+            "desvio_padrao": 3.562311660791476
+        },
+        "umidade_ar": {
+            "media": 65.97563195146613,
+            "desvio_padrao": 10.12526762512652
+        },
+        "umidade_solo": {
+            "media": 32.80561172901921,
+            "desvio_padrao": 44.555803206176954
+        },
+        "luminosidade_lux": {
+            "media": 5.627148634984833,
+            "desvio_padrao": 6.515857235132053
+        }
+    },
+    "10": {
+        "temperatura": {
+            "media": 23.515684264479752,
+            "desvio_padrao": 3.455180497372268
+        },
+        "umidade_ar": {
+            "media": 65.51822142491031,
+            "desvio_padrao": 10.374222120632743
+        },
+        "umidade_solo": {
+            "media": 32.35212711430036,
+            "desvio_padrao": 44.77688050516283
+        },
+        "luminosidade_lux": {
+            "media": 28.847770374167094,
+            "desvio_padrao": 30.68983674386103
+        }
+    },
+    "11": {
+        "temperatura": {
+            "media": 24.537551124744375,
+            "desvio_padrao": 3.1063718112379246
+        },
+        "umidade_ar": {
+            "media": 63.74394171779141,
+            "desvio_padrao": 10.997420682914287
+        },
+        "umidade_solo": {
+            "media": 31.76073619631902,
+            "desvio_padrao": 44.70605163961271
+        },
+        "luminosidade_lux": {
+            "media": 85.56927402862986,
+            "desvio_padrao": 98.1951537478811
+        }
+    },
+    "12": {
+        "temperatura": {
+            "media": 26.274108488196887,
+            "desvio_padrao": 2.841134873830691
+        },
+        "umidade_ar": {
+            "media": 60.33505775991964,
+            "desvio_padrao": 12.16875795500407
+        },
+        "umidade_solo": {
+            "media": 32.468859869412356,
+            "desvio_padrao": 45.11913293048579
+        },
+        "luminosidade_lux": {
+            "media": 126.99020592667001,
+            "desvio_padrao": 136.84859135206403
+        }
+    },
+    "13": {
+        "temperatura": {
+            "media": 28.26713532513181,
+            "desvio_padrao": 3.0023499926168955
+        },
+        "umidade_ar": {
+            "media": 56.048983178508664,
+            "desvio_padrao": 13.189879700542571
+        },
+        "umidade_solo": {
+            "media": 32.313080592518205,
+            "desvio_padrao": 45.05140372423644
+        },
+        "luminosidade_lux": {
+            "media": 120.89053477278433,
+            "desvio_padrao": 123.57946856585801
+        }
+    },
+    "14": {
+        "temperatura": {
+            "media": 30.108781586189643,
+            "desvio_padrao": 3.324576401563213
+        },
+        "umidade_ar": {
+            "media": 51.761120840630475,
+            "desvio_padrao": 13.485540565695095
+        },
+        "umidade_solo": {
+            "media": 32.11083312484363,
+            "desvio_padrao": 45.00745656419393
+        },
+        "luminosidade_lux": {
+            "media": 93.12734550913184,
+            "desvio_padrao": 90.81773453566282
+        }
+    },
+    "15": {
+        "temperatura": {
+            "media": 31.02244174265451,
+            "desvio_padrao": 8.372757827690066
+        },
+        "umidade_ar": {
+            "media": 48.13378926038501,
+            "desvio_padrao": 16.852158771515462
+        },
+        "umidade_solo": {
+            "media": 32.58637284701115,
+            "desvio_padrao": 45.20921034468147
+        },
+        "luminosidade_lux": {
+            "media": 73.03292806484296,
+            "desvio_padrao": 68.38230605901444
+        }
+    },
+    "16": {
+        "temperatura": {
+            "media": 31.768102356219913,
+            "desvio_padrao": 9.03815662828249
+        },
+        "umidade_ar": {
+            "media": 45.51053965036737,
+            "desvio_padrao": 17.734028111341903
+        },
+        "umidade_solo": {
+            "media": 32.63263237902204,
+            "desvio_padrao": 45.30662364612096
+        },
+        "luminosidade_lux": {
+            "media": 76.78718013681276,
+            "desvio_padrao": 76.24942935370109
+        }
+    },
+    "17": {
+        "temperatura": {
+            "media": 32.665323814380415,
+            "desvio_padrao": 4.242161081315205
+        },
+        "umidade_ar": {
+            "media": 44.50005099439062,
+            "desvio_padrao": 16.034951145789197
+        },
+        "umidade_solo": {
+            "media": 33.389852116267214,
+            "desvio_padrao": 45.42687922151068
+        },
+        "luminosidade_lux": {
+            "media": 92.35313615502295,
+            "desvio_padrao": 132.10816469234354
+        }
+    },
+    "18": {
+        "temperatura": {
+            "media": 32.34346504559271,
+            "desvio_padrao": 8.464487005008744
+        },
+        "umidade_ar": {
+            "media": 43.68543566362715,
+            "desvio_padrao": 18.222142824555096
+        },
+        "umidade_solo": {
+            "media": 32.67629179331307,
+            "desvio_padrao": 45.028477606050465
+        },
+        "luminosidade_lux": {
+            "media": 125.04457953394123,
+            "desvio_padrao": 251.5942811936801
+        }
+    },
+    "19": {
+        "temperatura": {
+            "media": 31.645952935091803,
+            "desvio_padrao": 10.528663904893284
+        },
+        "umidade_ar": {
+            "media": 43.596224463408326,
+            "desvio_padrao": 19.22546302632548
+        },
+        "umidade_solo": {
+            "media": 31.60693043703129,
+            "desvio_padrao": 44.439163452826584
+        },
+        "luminosidade_lux": {
+            "media": 85.06309800879235,
+            "desvio_padrao": 107.49834465464242
+        }
+    },
+    "20": {
+        "temperatura": {
+            "media": 30.808436593725283,
+            "desvio_padrao": 10.171585023253973
+        },
+        "umidade_ar": {
+            "media": 44.71798049037701,
+            "desvio_padrao": 18.446703175670873
+        },
+        "umidade_solo": {
+            "media": 29.926970735565515,
+            "desvio_padrao": 43.65939916884127
+        },
+        "luminosidade_lux": {
+            "media": 28.155286053256,
+            "desvio_padrao": 44.71973063595753
+        }
+    },
+    "21": {
+        "temperatura": {
+            "media": 29.36224620920072,
+            "desvio_padrao": 9.793096093534771
+        },
+        "umidade_ar": {
+            "media": 48.17920842970958,
+            "desvio_padrao": 17.99244134328378
+        },
+        "umidade_solo": {
+            "media": 31.47674119763557,
+            "desvio_padrao": 44.44756202473906
+        },
+        "luminosidade_lux": {
+            "media": 2.499100488306348,
+            "desvio_padrao": 5.3469051868871
+        }
+    },
+    "22": {
+        "temperatura": {
+            "media": 28.936763185108582,
+            "desvio_padrao": 2.852358384119228
+        },
+        "umidade_ar": {
+            "media": 50.985186142709416,
+            "desvio_padrao": 13.612838875537724
+        },
+        "umidade_solo": {
+            "media": 31.47828335056877,
+            "desvio_padrao": 44.4258059084855
+        },
+        "luminosidade_lux": {
+            "media": 21.757238883143742,
+            "desvio_padrao": 462.93972199745406
+        }
+    },
+    "23": {
+        "temperatura": {
+            "media": 28.096046511627907,
+            "desvio_padrao": 2.8265069911295218
+        },
+        "umidade_ar": {
+            "media": 53.184160206718346,
+            "desvio_padrao": 13.526140215109743
+        },
+        "umidade_solo": {
+            "media": 32.42093023255814,
+            "desvio_padrao": 44.7040100553633
+        },
+        "luminosidade_lux": {
+            "media": 3.518863049095607,
+            "desvio_padrao": 20.204588910095502
+        }
+    }
+}
