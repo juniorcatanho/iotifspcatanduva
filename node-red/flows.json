@@ -1,0 +1,2443 @@
+[
+  {
+    "id": "a79058ec8072bbe1",
+    "type": "tab",
+    "label": "Estufa - Dashboard (FlowFuse)",
+    "disabled": false,
+    "info": "Dashboard principal para monitoramento e recomendações."
+  },
+  {
+    "id": "ccf5fb59afdc94bf",
+    "type": "tab",
+    "label": "Gestão de Cultivos (FlowFuse)",
+    "disabled": false,
+    "info": "Interface de gerenciamento de cultivos com tabela (CRUD)"
+  },
+  {
+    "id": "b8051daff5d09381",
+    "type": "tab",
+    "label": "Análise Histórica (Tabela)",
+    "disabled": false,
+    "info": "Página para consulta e visualização de dados históricos diários."
+  },
+  {
+    "id": "2c9a8ea54ef13060",
+    "type": "ui-base",
+    "name": "Estufa Dashboard",
+    "path": "/dashboard",
+    "appIcon": "",
+    "includeClientData": true,
+    "acceptsClientConfig": [
+      "ui-control",
+      "ui-notification"
+    ],
+    "showPathInSidebar": false,
+    "headerContent": "page",
+    "navigationStyle": "fixed",
+    "titleBarStyle": "default",
+    "showReconnectNotification": true,
+    "notificationDisplayTime": 5,
+    "showDisconnectNotification": true,
+    "allowInstall": true
+  },
+  {
+    "id": "8af67624c602b9b0",
+    "type": "mqtt-broker",
+    "name": "",
+    "broker": "localhost",
+    "port": 1883,
+    "clientid": "",
+    "autoConnect": true,
+    "usetls": false,
+    "protocolVersion": 4,
+    "keepalive": 60,
+    "cleansession": true,
+    "autoUnsubscribe": true,
+    "birthTopic": "",
+    "birthQos": "0",
+    "birthRetain": "false",
+    "birthPayload": "",
+    "birthMsg": {},
+    "closeTopic": "",
+    "closeQos": "0",
+    "closeRetain": "false",
+    "closePayload": "",
+    "closeMsg": {},
+    "willTopic": "",
+    "willQos": "0",
+    "willRetain": "false",
+    "willPayload": "",
+    "willMsg": {},
+    "userProps": "",
+    "sessionExpiry": ""
+  },
+  {
+    "id": "428688d7fcb4518a",
+    "type": "ui-theme",
+    "name": "Tema Padrao",
+    "colors": {
+      "surface": "#ffffff",
+      "primary": "#0094ce",
+      "bgPage": "#eeeeee",
+      "groupBg": "#ffffff",
+      "groupOutline": "#cccccc"
+    },
+    "sizes": {
+      "density": "default",
+      "pagePadding": "12px",
+      "groupGap": "12px",
+      "groupBorderRadius": "4px",
+      "widgetGap": "12px"
+    }
+  },
+  {
+    "id": "4629e18bc65b4b5e",
+    "type": "ui-page",
+    "name": "Status Geral Sistema",
+    "ui": "2c9a8ea54ef13060",
+    "path": "/page3",
+    "icon": "home",
+    "layout": "grid",
+    "theme": "428688d7fcb4518a",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Small Desktop",
+        "px": "768",
+        "cols": "9"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 1,
+    "className": "",
+    "visible": true,
+    "disabled": false
+  },
+  {
+    "id": "453ac58ebb3d1442",
+    "type": "ui-group",
+    "name": "Controle IA",
+    "page": "4629e18bc65b4b5e",
+    "width": 6,
+    "height": 1,
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "5c7e44e09df03edd",
+    "type": "ui-group",
+    "z": "a79058ec8072bbe1",
+    "name": "Controle da IA",
+    "page": "4629e18bc65b4b5e",
+    "width": "12",
+    "height": "",
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "5cd81130ea4716e0",
+    "type": "ui-page",
+    "z": "a79058ec8072bbe1",
+    "name": "Histórico de Sensores",
+    "ui": "2c9a8ea54ef13060",
+    "path": "/historico",
+    "icon": "show_chart",
+    "layout": "grid",
+    "theme": "428688d7fcb4518a",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Small Desktop",
+        "px": "768",
+        "cols": "9"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 2,
+    "className": "",
+    "visible": true,
+    "disabled": false
+  },
+  {
+    "id": "1221c5254f857e39",
+    "type": "ui-group",
+    "z": "a79058ec8072bbe1",
+    "name": "Status Geral do Sistema",
+    "page": "4629e18bc65b4b5e",
+    "width": "12",
+    "height": "",
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "b3bfb7f07529a357",
+    "type": "ui-group",
+    "z": "a79058ec8072bbe1",
+    "name": "Históricos Sensores",
+    "page": "5cd81130ea4716e0",
+    "width": "12",
+    "order": 1
+  },
+  {
+    "id": "284fcb8e062bd693",
+    "type": "ui-page",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Gestão de Cultivos",
+    "ui": "2c9a8ea54ef13060",
+    "path": "/gestao",
+    "icon": "potted_plant",
+    "layout": "grid",
+    "theme": "428688d7fcb4518a",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Small Desktop",
+        "px": "768",
+        "cols": "9"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 3,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "850d367b6f2fcc1b",
+    "type": "ui-group",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Cultivos Cadastrados",
+    "page": "284fcb8e062bd693",
+    "width": "12",
+    "height": "",
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "4ad3ff13c7a5745d",
+    "type": "ui-group",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Cadastrar / Editar Cultivo",
+    "page": "284fcb8e062bd693",
+    "width": "12",
+    "height": "",
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "ef42834137766a91",
+    "type": "ui-page",
+    "z": "b8051daff5d09381",
+    "name": "Análise Histórica",
+    "ui": "2c9a8ea54ef13060",
+    "path": "/analise",
+    "icon": "manage_search",
+    "layout": "grid",
+    "theme": "428688d7fcb4518a",
+    "breakpoints": [
+      {
+        "name": "Default",
+        "px": "0",
+        "cols": "3"
+      },
+      {
+        "name": "Tablet",
+        "px": "576",
+        "cols": "6"
+      },
+      {
+        "name": "Small Desktop",
+        "px": "768",
+        "cols": "9"
+      },
+      {
+        "name": "Desktop",
+        "px": "1024",
+        "cols": "12"
+      }
+    ],
+    "order": 4,
+    "className": "",
+    "visible": "true",
+    "disabled": "false"
+  },
+  {
+    "id": "ea716b26dddc358d",
+    "type": "ui-group",
+    "z": "b8051daff5d09381",
+    "name": "Filtros de Pesquisa",
+    "page": "ef42834137766a91",
+    "width": "12",
+    "height": "",
+    "order": 1,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "e27247bc946e379d",
+    "type": "ui-group",
+    "z": "b8051daff5d09381",
+    "name": "Resultados do Dia Selecionado (Médias por Hora)",
+    "page": "ef42834137766a91",
+    "width": "12",
+    "height": "",
+    "order": 2,
+    "showTitle": true,
+    "className": "",
+    "visible": "true",
+    "disabled": "false",
+    "groupType": "default"
+  },
+  {
+    "id": "cf8bc730ecc7686e",
+    "type": "mongodb4-client",
+    "name": "iotdb",
+    "protocol": "mongodb+srv",
+    "hostname": "",
+    "port": "",
+    "dbName": "iotdb",
+    "appName": "",
+    "authSource": "",
+    "authMechanism": "DEFAULT",
+    "tls": false,
+    "tlsCAFile": "",
+    "tlsCertificateKeyFile": "",
+    "tlsInsecure": false,
+    "connectTimeoutMS": "30000",
+    "socketTimeoutMS": "0",
+    "minPoolSize": "0",
+    "maxPoolSize": "100",
+    "maxIdleTimeMS": "0",
+    "uri": "mongodb+srv://USUARIO_MONGODB:SENHA_MONGODB@SEU_CLUSTER.mongodb.net/iotdb",
+    "advanced": "{}",
+    "uriTabActive": "tab-uri-advanced"
+  },
+  {
+    "id": "hist_mongo_client",
+    "type": "mongodb4-client",
+    "name": "Conexao MongoDB",
+    "uri": "mongodb+srv://USUARIO_MONGODB:SENHA_MONGODB@SEU_CLUSTER.mongodb.net/iotdb"
+  },
+  {
+    "id": "ui_group_hist",
+    "type": "ui-group",
+    "name": "Histórico",
+    "width": "12",
+    "order": 1,
+    "visible": true,
+    "disabled": false
+  },
+  {
+    "id": "mongo_cfg",
+    "type": "mongodb4-client",
+    "z": "b8051daff5d09381",
+    "name": "Mongo Atlas",
+    "protocol": "mongodb+srv",
+    "hostname": "cluster0.1l9q3.mongodb.net",
+    "port": "",
+    "uri": "mongodb+srv://USUARIO_MONGODB:SENHA_MONGODB@SEU_CLUSTER.mongodb.net/iotdb"
+  },
+  {
+    "id": "3d441f9edaca702a",
+    "type": "mqtt in",
+    "z": "a79058ec8072bbe1",
+    "name": "MQTT - Status Conexao ESP32",
+    "topic": "estufa/status/conexao",
+    "qos": "2",
+    "datatype": "auto-detect",
+    "broker": "8af67624c602b9b0",
+    "nl": false,
+    "rap": false,
+    "inputs": 0,
+    "x": 170,
+    "y": 40,
+    "wires": [
+      [
+        "6d769965f96d5554"
+      ]
+    ]
+  },
+  {
+    "id": "6d769965f96d5554",
+    "type": "ui-text",
+    "z": "a79058ec8072bbe1",
+    "group": "1221c5254f857e39",
+    "order": 1,
+    "width": 12,
+    "height": 1,
+    "label": "Status Conexão ESP32:",
+    "format": "<h3 style=\"color:{{msg.payload == 'ONLINE' ? 'green' : 'red'}}\">{{msg.payload}}</h3>",
+    "layout": "row-left",
+    "x": 420,
+    "y": 40,
+    "wires": []
+  },
+  {
+    "id": "2f4883700779f709",
+    "type": "mqtt in",
+    "z": "a79058ec8072bbe1",
+    "name": "MQTT - Telemetria Consolidada",
+    "topic": "estufa/dados/telemetria",
+    "qos": "2",
+    "datatype": "json",
+    "broker": "8af67624c602b9b0",
+    "nl": false,
+    "rap": false,
+    "inputs": 0,
+    "x": 190,
+    "y": 200,
+    "wires": [
+      [
+        "dcf32cf198f93990",
+        "b48647ef0381356b"
+      ]
+    ]
+  },
+  {
+    "id": "dcf32cf198f93990",
+    "type": "function",
+    "z": "a79058ec8072bbe1",
+    "name": "Extrair e Roteiar Dados",
+    "func": "// Extrai os dados do payload do MQTT\nlet timestamp = msg.payload.timestamp;\nlet temperatura = msg.payload.temperatura;\nlet umidade_ar = msg.payload.umidade_ar;\nlet umidade_solo = msg.payload.umidade_solo;\nlet luminosidade_lux = msg.payload.luminosidade_lux;\n\n// --- CÁLCULO DA PORCENTAGEM DE LUMINOSIDADE ---\n// Define o máximo para o cálculo (65535 é o limite do sensor BH1750)\n// Se preferir que 100% seja o ideal para orquídeas (ex: 20000 Lux), mude este valor.\nconst maxLux = 65535; \n\nlet luminosidade_percent = (luminosidade_lux / maxLux) * 100;\n\n// Garante que não passa de 100% e arredonda\nif (luminosidade_percent > 100) luminosidade_percent = 100;\nluminosidade_percent = parseFloat(luminosidade_percent.toFixed(1));\n\n// --- PREPARAÇÃO DAS MENSAGENS DE SAÍDA ---\n\n// Adiciona timestamp completo para o MongoDB (se necessário)\nlet now = new Date();\nmsg.payload.timestamp_full = now.toISOString();\n\n// Cria as mensagens individuais para cada gráfico/gauge\nlet msgTemp = { payload: temperatura, topic: 'temperatura' };\nlet msgUmidAr = { payload: umidade_ar, topic: 'umidade_ar' };\nlet msgUmidSolo = { payload: umidade_solo, topic: 'umidade_solo' };\nlet msgLux = { payload: luminosidade_lux, topic: 'luminosidade_lux' };\nlet msgLuxPercent = { payload: luminosidade_percent, topic: 'luminosidade_percent' }; // Agora calculado!\n\nlet msgMongo = { payload: msg.payload };\n\n// Retorna na ordem correta das saídas (verifique a ordem no seu nó!)\n// Saída 1: Temp | 2: Umid Ar | 3: Umid Solo | 4: Lux | 5: Lux % | 6: MongoDB\nreturn [msgTemp, msgUmidAr, msgUmidSolo, msgLux, msgLuxPercent, msgMongo];",
+    "outputs": 6,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 290,
+    "y": 420,
+    "wires": [
+      [
+        "23fac8f2aa4bf4fc",
+        "5311ca3bdb5f9d35"
+      ],
+      [
+        "41caa5a8063ee693",
+        "40a36df2d746e8d6"
+      ],
+      [
+        "02bac1da0710a3b5",
+        "c8986b8b870e31ee"
+      ],
+      [
+        "87e18ee5f69edc5e",
+        "22e0eaaff5e9229a"
+      ],
+      [
+        "63b1bdead46785d9"
+      ],
+      [
+        "e98fd6cef7649702"
+      ]
+    ]
+  },
+  {
+    "id": "23fac8f2aa4bf4fc",
+    "type": "ui-gauge",
+    "z": "a79058ec8072bbe1",
+    "name": "Temperatura",
+    "group": "1221c5254f857e39",
+    "order": 5,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 4,
+    "height": 4,
+    "gtype": "gauge-34",
+    "gstyle": "needle",
+    "title": "Temperatura (ºC)",
+    "alwaysShowTitle": false,
+    "units": "",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#00b500",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "20",
+        "color": "#e6e600",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "35",
+        "color": "#ca3838",
+        "text": "",
+        "textType": "label"
+      }
+    ],
+    "min": 0,
+    "max": 50,
+    "sizeThickness": "10",
+    "sizeGap": "10",
+    "sizeKeyThickness": "10",
+    "className": "",
+    "x": 710,
+    "y": 200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "41caa5a8063ee693",
+    "type": "ui-gauge",
+    "z": "a79058ec8072bbe1",
+    "name": "Umidade Ar",
+    "group": "1221c5254f857e39",
+    "order": 4,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 4,
+    "height": 4,
+    "gtype": "gauge-34",
+    "gstyle": "needle",
+    "title": "Umidade do Ar (%)",
+    "alwaysShowTitle": false,
+    "units": "",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#ca3838",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "35",
+        "color": "#e6e600",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "65",
+        "color": "#00b500",
+        "text": "",
+        "textType": "label"
+      }
+    ],
+    "min": 0,
+    "max": 100,
+    "sizeThickness": "10",
+    "sizeGap": "10",
+    "sizeKeyThickness": "10",
+    "className": "",
+    "x": 870,
+    "y": 320,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "02bac1da0710a3b5",
+    "type": "ui-gauge",
+    "z": "a79058ec8072bbe1",
+    "name": "Umidade Solo",
+    "group": "1221c5254f857e39",
+    "order": 3,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 4,
+    "height": 4,
+    "gtype": "gauge-34",
+    "gstyle": "needle",
+    "title": "Umidade do Solo (%)",
+    "alwaysShowTitle": false,
+    "units": "",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#ca3838",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "35",
+        "color": "#e6e600",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "65",
+        "color": "#00b500",
+        "text": "",
+        "textType": "label"
+      }
+    ],
+    "min": 0,
+    "max": 100,
+    "sizeThickness": "10",
+    "sizeGap": "10",
+    "sizeKeyThickness": "10",
+    "className": "",
+    "x": 870,
+    "y": 460,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "87e18ee5f69edc5e",
+    "type": "ui-gauge",
+    "z": "a79058ec8072bbe1",
+    "name": "Luminosidade Lux",
+    "group": "1221c5254f857e39",
+    "order": 6,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 4,
+    "height": 4,
+    "gtype": "gauge-34",
+    "gstyle": "needle",
+    "title": "Luminosidade Lux",
+    "alwaysShowTitle": false,
+    "units": "",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#00b500",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "20000",
+        "color": "#e6e600",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "40000",
+        "color": "#ca3838",
+        "text": "",
+        "textType": "label"
+      }
+    ],
+    "min": 0,
+    "max": 65535,
+    "sizeThickness": "10",
+    "sizeGap": "10",
+    "sizeKeyThickness": "10",
+    "className": "",
+    "x": 870,
+    "y": 600,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "63b1bdead46785d9",
+    "type": "ui-gauge",
+    "z": "a79058ec8072bbe1",
+    "name": "Luminosidade Percent",
+    "group": "1221c5254f857e39",
+    "order": 2,
+    "value": "payload",
+    "valueType": "msg",
+    "width": 4,
+    "height": 4,
+    "gtype": "gauge-34",
+    "gstyle": "needle",
+    "title": "Luminosidade (%)",
+    "alwaysShowTitle": false,
+    "units": "",
+    "icon": "",
+    "prefix": "",
+    "suffix": "",
+    "segments": [
+      {
+        "from": "0",
+        "color": "#00b500",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "35",
+        "color": "#e6e600",
+        "text": "",
+        "textType": "label"
+      },
+      {
+        "from": "65",
+        "color": "#ca3838",
+        "text": "",
+        "textType": "label"
+      }
+    ],
+    "min": 0,
+    "max": 100,
+    "sizeThickness": "10",
+    "sizeGap": "10",
+    "sizeKeyThickness": "10",
+    "className": "",
+    "x": 950,
+    "y": 720,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "5311ca3bdb5f9d35",
+    "type": "ui-chart",
+    "z": "a79058ec8072bbe1",
+    "group": "b3bfb7f07529a357",
+    "name": "",
+    "label": "Histórico de Temperatura (ºC)",
+    "order": 1,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "property",
+    "ymin": "0",
+    "ymax": "50",
+    "bins": "",
+    "action": "append",
+    "stackSeries": false,
+    "pointRadius": "",
+    "showLegend": false,
+    "removeOlder": "30",
+    "removeOlderUnit": "86400",
+    "removeOlderPoints": "",
+    "colors": [
+      "#1f77b4",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": "12",
+    "height": "8",
+    "className": "",
+    "interpolation": "linear",
+    "x": 950,
+    "y": 220,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "40a36df2d746e8d6",
+    "type": "ui-chart",
+    "z": "a79058ec8072bbe1",
+    "group": "b3bfb7f07529a357",
+    "name": "",
+    "label": "Histórico de Umidade do Ar (%)",
+    "order": 2,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "property",
+    "ymin": "0",
+    "ymax": "100",
+    "bins": "",
+    "action": "append",
+    "stackSeries": false,
+    "pointRadius": "",
+    "showLegend": true,
+    "removeOlder": "30",
+    "removeOlderUnit": "86400",
+    "removeOlderPoints": "",
+    "colors": [
+      "#1f77b4",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": "12",
+    "height": "8",
+    "className": "",
+    "interpolation": "linear",
+    "x": 950,
+    "y": 360,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c8986b8b870e31ee",
+    "type": "ui-chart",
+    "z": "a79058ec8072bbe1",
+    "group": "b3bfb7f07529a357",
+    "name": "",
+    "label": "Histórico de Umidade do Solo (%)",
+    "order": 3,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "property",
+    "ymin": "0",
+    "ymax": "100",
+    "bins": "",
+    "action": "append",
+    "stackSeries": false,
+    "pointRadius": "",
+    "showLegend": true,
+    "removeOlder": "30",
+    "removeOlderUnit": "86400",
+    "removeOlderPoints": "",
+    "colors": [
+      "#1f77b4",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": 12,
+    "height": 8,
+    "className": "",
+    "interpolation": "linear",
+    "x": 960,
+    "y": 540,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "22e0eaaff5e9229a",
+    "type": "ui-chart",
+    "z": "a79058ec8072bbe1",
+    "group": "b3bfb7f07529a357",
+    "name": "",
+    "label": "Histórico Luminosidade Lux (Lux)",
+    "order": 4,
+    "chartType": "line",
+    "category": "topic",
+    "categoryType": "msg",
+    "xAxisLabel": "",
+    "xAxisProperty": "",
+    "xAxisPropertyType": "timestamp",
+    "xAxisType": "time",
+    "xAxisFormat": "",
+    "xAxisFormatType": "auto",
+    "xmin": "",
+    "xmax": "",
+    "yAxisLabel": "",
+    "yAxisProperty": "payload",
+    "yAxisPropertyType": "property",
+    "ymin": "0",
+    "ymax": "65535",
+    "bins": "",
+    "action": "append",
+    "stackSeries": false,
+    "pointRadius": "",
+    "showLegend": true,
+    "removeOlder": "30",
+    "removeOlderUnit": "86400",
+    "removeOlderPoints": "",
+    "colors": [
+      "#1f77b4",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000",
+      "#000000"
+    ],
+    "textColor": [
+      "#666666"
+    ],
+    "textColorDefault": true,
+    "gridColor": [
+      "#e5e5e5"
+    ],
+    "gridColorDefault": true,
+    "width": 12,
+    "height": 8,
+    "className": "",
+    "interpolation": "linear",
+    "x": 950,
+    "y": 680,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "327345fb3683f456",
+    "type": "ui-button",
+    "z": "a79058ec8072bbe1",
+    "group": "453ac58ebb3d1442",
+    "name": "",
+    "label": "1. Carregar / Atualizar Lista de Cultivos",
+    "order": 1,
+    "width": 12,
+    "height": 1,
+    "emulateClick": false,
+    "className": "",
+    "icon": "refresh",
+    "iconPosition": "left",
+    "payload": "{}",
+    "payloadType": "json",
+    "topic": "",
+    "topicType": "str",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 210,
+    "y": 1220,
+    "wires": [
+      [
+        "448f2f5101f48a83"
+      ]
+    ]
+  },
+  {
+    "id": "6c40d96d394986a1",
+    "type": "function",
+    "z": "a79058ec8072bbe1",
+    "name": "Formatar para Dropdown",
+    "func": "const cultivos = msg.payload;\n\nconst options = cultivos.map(cultivo => {\n    return {\n        label: cultivo.nome_cultura,\n        value: cultivo._id.toString()\n    };\n});\n\nflow.set(\"final.listaCompletaCultivos\", options);\nconst ativoID = flow.get(\"final.cultivoAtivoID\") || \"\";\n\nmsg.options = options;\nmsg.payload = ativoID;\n\nreturn msg;",
+    "outputs": 1,
+    "x": 780,
+    "y": 1220,
+    "wires": [
+      [
+        "75bf59c6ff2af652"
+      ]
+    ]
+  },
+  {
+    "id": "75bf59c6ff2af652",
+    "type": "ui-dropdown",
+    "z": "a79058ec8072bbe1",
+    "group": "453ac58ebb3d1442",
+    "name": "",
+    "label": "2. Selecione o Cultivo",
+    "order": 2,
+    "width": 12,
+    "height": 1,
+    "passthru": false,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [],
+    "payload": "",
+    "topic": "topic",
+    "topicType": "str",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 530,
+    "y": 1280,
+    "wires": [
+      [
+        "78cb38d75111d546"
+      ]
+    ]
+  },
+  {
+    "id": "78cb38d75111d546",
+    "type": "change",
+    "z": "a79058ec8072bbe1",
+    "name": "Salvar Seleção Pendente",
+    "rules": [
+      {
+        "t": "set",
+        "p": "selecaoPendente",
+        "pt": "flow",
+        "to": "payload",
+        "tot": "msg"
+      }
+    ],
+    "x": 800,
+    "y": 1280,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "c4eff1fe958dbbf4",
+    "type": "ui-button",
+    "z": "a79058ec8072bbe1",
+    "group": "453ac58ebb3d1442",
+    "name": "",
+    "label": "3. Confirmar e Ativar Cultivo Selecionado",
+    "order": 3,
+    "width": 12,
+    "height": 1,
+    "emulateClick": false,
+    "color": "green",
+    "className": "",
+    "icon": "check",
+    "iconPosition": "left",
+    "payload": "",
+    "payloadType": "str",
+    "topic": "",
+    "topicType": "str",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 200,
+    "y": 1340,
+    "wires": [
+      [
+        "d830ab279d56f1f1"
+      ]
+    ]
+  },
+  {
+    "id": "d830ab279d56f1f1",
+    "type": "function",
+    "z": "a79058ec8072bbe1",
+    "name": "Processar e Salvar",
+    "func": "const pendingId = flow.get(\"selecaoPendente\");\nconst fullList = flow.get(\"final.listaCompletaCultivos\") || [];\n\nif (!pendingId) {\n    node.warn(\"Nenhum cultivo foi selecionado antes de confirmar.\");\n    return null;\n}\n\nconst selectedCrop = fullList.find(c => c.value === pendingId);\n\nif (!selectedCrop) {\n    node.error(\"Cultivo selecionado não foi encontrado na lista. Tente carregar a lista novamente.\");\n    return null;\n}\n\nflow.set(\"selecaoPendente\", null);\nflow.set(\"final.cultivoAtivoID\", selectedCrop.value);\n\nconst displayMsg = { payload: selectedCrop.label };\nconst mqttMsg = { payload: selectedCrop.value };\nconst logMsg = {\n    payload: {\n        timestamp: new Date(),\n        cultivoId: selectedCrop.value,\n        cultivoNome: selectedCrop.label\n    }\n};\n\nreturn [displayMsg, mqttMsg, logMsg];",
+    "outputs": 3,
+    "x": 540,
+    "y": 1360,
+    "wires": [
+      [
+        "f3a9419ce520ba20"
+      ],
+      [
+        "034bb115094b5c30"
+      ],
+      [
+        "65d2ee00a93cf6ca"
+      ]
+    ]
+  },
+  {
+    "id": "f3a9419ce520ba20",
+    "type": "ui-text",
+    "z": "a79058ec8072bbe1",
+    "group": "453ac58ebb3d1442",
+    "order": 4,
+    "width": 12,
+    "height": 1,
+    "name": "",
+    "label": "Cultivo Ativo:",
+    "format": "<b><font color=\"green\">{{msg.payload}}</font></b>",
+    "layout": "row-spread",
+    "style": false,
+    "font": "",
+    "fontSize": "",
+    "color": "#000000",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 800,
+    "y": 1340,
+    "wires": []
+  },
+  {
+    "id": "034bb115094b5c30",
+    "type": "mqtt out",
+    "z": "a79058ec8072bbe1",
+    "name": "Publicar Cultivo Ativo (MQTT)",
+    "topic": "estufa/config/cultivo_ativo",
+    "qos": "1",
+    "retain": "true",
+    "respTopic": "",
+    "contentType": "",
+    "userProps": "",
+    "correl": "",
+    "expiry": "",
+    "broker": "8af67624c602b9b0",
+    "x": 810,
+    "y": 1380,
+    "wires": []
+  },
+  {
+    "id": "86d06e8536f2e732",
+    "type": "mqtt in",
+    "z": "a79058ec8072bbe1",
+    "name": "Ouvir Cultivo Salvo (Persistência)",
+    "topic": "estufa/config/cultivo_ativo",
+    "qos": "2",
+    "datatype": "auto-detect",
+    "broker": "8af67624c602b9b0",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 230,
+    "y": 1460,
+    "wires": [
+      [
+        "418cbc7d253dd311"
+      ]
+    ]
+  },
+  {
+    "id": "418cbc7d253dd311",
+    "type": "change",
+    "z": "a79058ec8072bbe1",
+    "name": "Salvar ID Ativo na Memória",
+    "rules": [
+      {
+        "t": "set",
+        "p": "final.cultivoAtivoID",
+        "pt": "flow",
+        "to": "payload",
+        "tot": "msg"
+      }
+    ],
+    "x": 570,
+    "y": 1480,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "7090ecf26e8175ec",
+    "type": "mqtt in",
+    "z": "a79058ec8072bbe1",
+    "name": "MQTT Recomendações da IA",
+    "topic": "estufa/ia/recomendacoes",
+    "qos": "2",
+    "datatype": "json",
+    "broker": "8af67624c602b9b0",
+    "nl": false,
+    "rap": true,
+    "rh": 0,
+    "inputs": 0,
+    "x": 160,
+    "y": 920,
+    "wires": [
+      [
+        "9f52cb9ae4143c5b"
+      ]
+    ]
+  },
+  {
+    "id": "9f52cb9ae4143c5b",
+    "type": "function",
+    "z": "a79058ec8072bbe1",
+    "name": "Distribuir Alertas e Recomendações",
+    "func": "// A IA enviará um JSON como: { \"alerts\": [], \"recommendation\": \"...\" }\nconst data = msg.payload;\n\n// Prepara a mensagem para o widget de Recomendações (inteligentes)\nconst msg_recom = { payload: data.recommendation };\n\n// Prepara a mensagem para o widget de Alertas (regras)\n// Usamos .join('<br>') para que cada alerta pule uma linha no dashboard\nconst msg_alert = { payload: data.alerts.join('<br>') };\n\n// A primeira saída enviará as recomendações, a segunda os alertas\nreturn [ msg_recom, msg_alert ];",
+    "outputs": 2,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 440,
+    "y": 920,
+    "wires": [
+      [
+        "0cedc6e3ae1e3e5f"
+      ],
+      [
+        "8ad938d6776b7688"
+      ]
+    ]
+  },
+  {
+    "id": "0cedc6e3ae1e3e5f",
+    "type": "ui-text",
+    "z": "a79058ec8072bbe1",
+    "group": "1221c5254f857e39",
+    "order": 8,
+    "width": 12,
+    "height": 2,
+    "name": "",
+    "label": "Recomendações da I.A. (Análise de Padrões):",
+    "format": "<div style=\"font-size: 16px; font-weight: bold; padding: 5px; border-left: 5px solid #0094ce; white-space: pre-wrap;\">{{msg.payload}}</div>",
+    "layout": "row-left",
+    "style": false,
+    "font": "",
+    "fontSize": "",
+    "color": "#000000",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 800,
+    "y": 860,
+    "wires": []
+  },
+  {
+    "id": "8ad938d6776b7688",
+    "type": "ui-text",
+    "z": "a79058ec8072bbe1",
+    "group": "1221c5254f857e39",
+    "order": 7,
+    "width": 12,
+    "height": 4,
+    "name": "",
+    "label": "Alertas de Status (Regras):",
+    "format": "<div style=\"white-space: pre-wrap;\">{{{msg.payload}}}</div>",
+    "layout": "row-left",
+    "style": false,
+    "font": "",
+    "fontSize": "",
+    "color": "#000000",
+    "wrapText": false,
+    "className": "",
+    "value": "payload",
+    "valueType": "msg",
+    "x": 740,
+    "y": 960,
+    "wires": []
+  },
+  {
+    "id": "e98fd6cef7649702",
+    "type": "mongodb4",
+    "z": "a79058ec8072bbe1",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "leituras_estufa",
+    "operation": "insertOne",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": false,
+    "name": "Salvar Dados Sensores",
+    "x": 770,
+    "y": 120,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "448f2f5101f48a83",
+    "type": "mongodb4",
+    "z": "a79058ec8072bbe1",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "perfis_cultura",
+    "operation": "find",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Buscar Todos os Perfis",
+    "x": 540,
+    "y": 1220,
+    "wires": [
+      [
+        "6c40d96d394986a1"
+      ]
+    ]
+  },
+  {
+    "id": "65d2ee00a93cf6ca",
+    "type": "mongodb4",
+    "z": "a79058ec8072bbe1",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "log_cultivos_ativos",
+    "operation": "insertOne",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Salvar Log de Atividade",
+    "x": 790,
+    "y": 1420,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "b48647ef0381356b",
+    "type": "debug",
+    "z": "a79058ec8072bbe1",
+    "name": "mqtt telemetria",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 500,
+    "y": 200,
+    "wires": []
+  },
+  {
+    "id": "68cfb2164c88b5aa",
+    "type": "inject",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Carregar ao iniciar",
+    "props": [
+      {
+        "p": "payload"
+      }
+    ],
+    "repeat": "",
+    "crontab": "",
+    "once": true,
+    "onceDelay": "1",
+    "topic": "",
+    "payload": "{}",
+    "payloadType": "json",
+    "x": 130,
+    "y": 100,
+    "wires": [
+      [
+        "7b56a5b180ed84a4"
+      ]
+    ]
+  },
+  {
+    "id": "39bab62e46cb85fe",
+    "type": "ui-table",
+    "z": "ccf5fb59afdc94bf",
+    "group": "4ad3ff13c7a5745d",
+    "name": "Tabela de Cultivos",
+    "label": "",
+    "order": 1,
+    "width": "0",
+    "height": "0",
+    "maxrows": "",
+    "passthru": true,
+    "autocols": true,
+    "showSearch": false,
+    "deselect": true,
+    "selectionType": "click",
+    "columns": [
+      {
+        "title": "",
+        "key": "_id",
+        "keyType": "key",
+        "width": ""
+      },
+      {
+        "title": "",
+        "key": "nome_cultura",
+        "keyType": "key",
+        "width": ""
+      },
+      {
+        "title": "",
+        "key": "last_updated",
+        "keyType": "key",
+        "width": ""
+      }
+    ],
+    "mobileBreakpoint": "sm",
+    "mobileBreakpointType": "defaults",
+    "action": "replace",
+    "x": 620,
+    "y": 100,
+    "wires": [
+      [
+        "f8195fb4bab9ca53"
+      ]
+    ]
+  },
+  {
+    "id": "f8195fb4bab9ca53",
+    "type": "function",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Preencher Formulário",
+    "func": "const rowData = msg.payload;\n\n// Guarda o ID do item selecionado para a operação de UPDATE\nflow.set(\"selected_cultivo_id\", rowData._id);\n\n// O ui-form espera receber um objeto no payload para preencher os campos\nmsg.payload = rowData;\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 840,
+    "y": 100,
+    "wires": [
+      [
+        "61297b195b2edab5"
+      ]
+    ]
+  },
+  {
+    "id": "61297b195b2edab5",
+    "type": "ui-form",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Formulário de Cultivo",
+    "group": "4ad3ff13c7a5745d",
+    "order": 2,
+    "width": 12,
+    "height": 11,
+    "options": [
+      {
+        "label": "Nome do Cultivo",
+        "key": "nome_cultura",
+        "type": "text",
+        "required": true
+      },
+      {
+        "label": "Temp. Mín (°C)",
+        "key": "temperatura_ideal_min_C",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Temp. Máx (°C)",
+        "key": "temperatura_ideal_max_C",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Umid. Ar Mín (%)",
+        "key": "umidade_ar_ideal_min_percent",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Umid. Ar Máx (%)",
+        "key": "umidade_ar_ideal_max_percent",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Umid. Solo Mín (%)",
+        "key": "umidade_solo_ideal_min_percent",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Umid. Solo Máx (%)",
+        "key": "umidade_solo_ideal_max_percent",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Lum. Mín (Lux)",
+        "key": "luminosidade_ideal_min_lux",
+        "type": "number",
+        "required": true
+      },
+      {
+        "label": "Lum. Máx (Lux)",
+        "key": "luminosidade_ideal_max_lux",
+        "type": "number",
+        "required": true
+      }
+    ],
+    "formValue": "payload",
+    "payload": {},
+    "submit": "Salvar Alterações",
+    "cancel": "Cancelar",
+    "topic": "",
+    "splitLayout": true,
+    "x": 350,
+    "y": 220,
+    "wires": [
+      [
+        "76335fb60381f9d9"
+      ]
+    ]
+  },
+  {
+    "id": "a5b87cd018dcbfc4",
+    "type": "ui-button",
+    "z": "ccf5fb59afdc94bf",
+    "group": "4ad3ff13c7a5745d",
+    "name": "Limpar (Novo Cultivo)",
+    "label": "Limpar (Novo Cultivo)",
+    "order": 3,
+    "width": 6,
+    "height": 1,
+    "emulateClick": false,
+    "tooltip": "Limpa todos os campos para cadastrar um novo cultivo",
+    "color": "orange",
+    "className": "",
+    "icon": "clear",
+    "iconPosition": "left",
+    "payload": "trigger",
+    "payloadType": "str",
+    "topic": "",
+    "topicType": "str",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 100,
+    "y": 580,
+    "wires": [
+      [
+        "bd5372f777a35a07"
+      ]
+    ]
+  },
+  {
+    "id": "bd5372f777a35a07",
+    "type": "function",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Limpar Campos e ID",
+    "func": "// Limpa a variável de ID selecionado para indicar modo de CRIAÇÃO\nflow.set(\"selected_cultivo_id\", null);\n\n// Envia um payload com todas as chaves do formulário zeradas.\n// Isso força a atualização de cada campo para um valor vazio.\nmsg.payload = {\n    nome_cultura: \"\",\n    temperatura_ideal_min_C: null,\n    temperatura_ideal_max_C: null,\n    umidade_ar_ideal_min_percent: null,\n    umidade_ar_ideal_max_percent: null,\n    umidade_solo_ideal_min_percent: null,\n    umidade_solo_ideal_max_percent: null,\n    luminosidade_ideal_min_lux: null,\n    luminosidade_ideal_max_lux: null\n};\n\nreturn msg;",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 340,
+    "y": 580,
+    "wires": [
+      [
+        "61297b195b2edab5",
+        "187b515d8a1f0c1e"
+      ]
+    ]
+  },
+  {
+    "id": "76335fb60381f9d9",
+    "type": "function",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Construir Objeto para Salvar",
+    "func": "const formData = msg.payload;\nconst selectedId = flow.get(\"selected_cultivo_id\");\n\nif (!formData.nome_cultura || typeof formData.nome_cultura !== 'string' || formData.nome_cultura.trim() === '') {\n    node.warn(\"Erro: O Nome do Cultivo é obrigatório!\");\n    return null;\n}\n\nformData.last_updated = new Date().toISOString();\n\n// Decide se é um UPDATE ou um INSERT e define msg.operation\nif (selectedId) {\n    msg.operation = 'updateOne';\n    msg.query = { _id: selectedId };\n    msg.payload = { $set: formData };\n} else {\n    msg.operation = 'insertOne';\n    msg.payload = formData;\n}\n\n// Limpa o ID selecionado após a operação\nflow.set(\"selected_cultivo_id\", null);\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 350,
+    "y": 160,
+    "wires": [
+      [
+        "a1d018a9b3d30940"
+      ]
+    ]
+  },
+  {
+    "id": "be8405c7b77887f6",
+    "type": "ui-button",
+    "z": "ccf5fb59afdc94bf",
+    "group": "4ad3ff13c7a5745d",
+    "name": "Deletar Selecionado",
+    "label": "Deletar Selecionado",
+    "order": 4,
+    "width": 6,
+    "height": 1,
+    "tooltip": "Deleta o cultivo selecionado na tabela acima",
+    "color": "red",
+    "icon": "delete",
+    "payload": "",
+    "payloadType": "str",
+    "topic": "",
+    "enableClick": true,
+    "x": 140,
+    "y": 360,
+    "wires": [
+      [
+        "7181ba7167539fc1"
+      ]
+    ]
+  },
+  {
+    "id": "7181ba7167539fc1",
+    "type": "function",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Preparar para Deletar",
+    "func": "const id_to_delete = flow.get(\"selected_cultivo_id\");\n\nif (!id_to_delete) {\n    node.warn(\"Erro: Selecione um cultivo da tabela antes de deletar!\");\n    return null;\n}\n\nmsg.payload = { _id: id_to_delete };\nflow.set(\"selected_cultivo_id\", null);\n\nreturn msg;",
+    "outputs": 1,
+    "noerr": 0,
+    "x": 300,
+    "y": 420,
+    "wires": [
+      [
+        "7619168a1fe6462d"
+      ]
+    ]
+  },
+  {
+    "id": "6ce05806c5ce15d6",
+    "type": "change",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Sinal para Recarregar Tabela",
+    "rules": [
+      {
+        "t": "set",
+        "p": "payload",
+        "pt": "msg",
+        "to": "{}",
+        "tot": "json"
+      }
+    ],
+    "x": 370,
+    "y": 40,
+    "wires": [
+      [
+        "7b56a5b180ed84a4"
+      ]
+    ]
+  },
+  {
+    "id": "a1d018a9b3d30940",
+    "type": "switch",
+    "z": "ccf5fb59afdc94bf",
+    "name": "Insert ou Update?",
+    "property": "operation",
+    "propertyType": "msg",
+    "rules": [
+      {
+        "t": "eq",
+        "v": "insertOne",
+        "vt": "str"
+      },
+      {
+        "t": "eq",
+        "v": "updateOne",
+        "vt": "str"
+      }
+    ],
+    "checkall": "true",
+    "repair": false,
+    "outputs": 2,
+    "x": 340,
+    "y": 260,
+    "wires": [
+      [
+        "f534fdbb35e762f5"
+      ],
+      [
+        "8ce549c9034595f9"
+      ]
+    ]
+  },
+  {
+    "id": "f4b4e41837811aa4",
+    "type": "ui-notification",
+    "z": "ccf5fb59afdc94bf",
+    "ui": "2c9a8ea54ef13060",
+    "position": "top-right",
+    "displayTime": "3",
+    "outputs": 0,
+    "x": 820,
+    "y": 280,
+    "wires": []
+  },
+  {
+    "id": "1568cea291ab3db2",
+    "type": "ui-notification",
+    "z": "ccf5fb59afdc94bf",
+    "ui": "2c9a8ea54ef13060",
+    "position": "top-right",
+    "displayTime": "3",
+    "outputs": 0,
+    "x": 730,
+    "y": 360,
+    "wires": []
+  },
+  {
+    "id": "187b515d8a1f0c1e",
+    "type": "debug",
+    "z": "ccf5fb59afdc94bf",
+    "name": "debug limpar campos",
+    "active": true,
+    "tosidebar": true,
+    "console": false,
+    "tostatus": false,
+    "complete": "payload",
+    "targetType": "msg",
+    "statusVal": "",
+    "statusType": "auto",
+    "x": 640,
+    "y": 580,
+    "wires": []
+  },
+  {
+    "id": "7b56a5b180ed84a4",
+    "type": "mongodb4",
+    "z": "ccf5fb59afdc94bf",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "perfis_cultura",
+    "operation": "find",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Buscar Todos os Cultivos",
+    "x": 360,
+    "y": 100,
+    "wires": [
+      [
+        "39bab62e46cb85fe"
+      ]
+    ]
+  },
+  {
+    "id": "7619168a1fe6462d",
+    "type": "mongodb4",
+    "z": "ccf5fb59afdc94bf",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "perfis_cultura",
+    "operation": "deleteOne",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Deletar no MongoDB",
+    "x": 520,
+    "y": 360,
+    "wires": [
+      [
+        "6ce05806c5ce15d6",
+        "1568cea291ab3db2"
+      ]
+    ]
+  },
+  {
+    "id": "f534fdbb35e762f5",
+    "type": "mongodb4",
+    "z": "ccf5fb59afdc94bf",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "perfis_cultura",
+    "operation": "insertOne",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Inserir Novo Cultivo",
+    "x": 580,
+    "y": 260,
+    "wires": [
+      [
+        "f4b4e41837811aa4",
+        "6ce05806c5ce15d6"
+      ]
+    ]
+  },
+  {
+    "id": "8ce549c9034595f9",
+    "type": "mongodb4",
+    "z": "ccf5fb59afdc94bf",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "perfis_cultura",
+    "operation": "updateOne",
+    "output": "toArray",
+    "maxTimeMS": "0",
+    "handleDocId": true,
+    "name": "Atualizar Cultivo Existente",
+    "x": 730,
+    "y": 180,
+    "wires": [
+      [
+        "f4b4e41837811aa4",
+        "6ce05806c5ce15d6"
+      ]
+    ]
+  },
+  {
+    "id": "hist_dropdown_ano",
+    "type": "ui-dropdown",
+    "z": "b8051daff5d09381",
+    "group": "ea716b26dddc358d",
+    "name": "Dropdown Ano",
+    "label": "Ano",
+    "tooltip": "",
+    "order": 1,
+    "width": "4",
+    "height": "1",
+    "passthru": true,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "2025",
+        "value": "2025",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "ano",
+    "topicType": "str",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 120,
+    "y": 80,
+    "wires": [
+      [
+        "hist_salvar_ano"
+      ]
+    ]
+  },
+  {
+    "id": "hist_salvar_ano",
+    "type": "change",
+    "z": "b8051daff5d09381",
+    "name": "Salvar Ano",
+    "rules": [
+      {
+        "t": "set",
+        "p": "hist_ano",
+        "pt": "flow",
+        "to": "payload",
+        "tot": "msg"
+      }
+    ],
+    "x": 350,
+    "y": 80,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "hist_dropdown_mes",
+    "type": "ui-dropdown",
+    "z": "b8051daff5d09381",
+    "group": "ea716b26dddc358d",
+    "name": "Dropdown Mês",
+    "label": "Mês",
+    "order": 2,
+    "width": "4",
+    "height": "1",
+    "passthru": true,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "01",
+        "value": "01",
+        "type": "str"
+      },
+      {
+        "label": "02",
+        "value": "02",
+        "type": "str"
+      },
+      {
+        "label": "03",
+        "value": "03",
+        "type": "str"
+      },
+      {
+        "label": "04",
+        "value": "04",
+        "type": "str"
+      },
+      {
+        "label": "05",
+        "value": "05",
+        "type": "str"
+      },
+      {
+        "label": "06",
+        "value": "06",
+        "type": "str"
+      },
+      {
+        "label": "07",
+        "value": "07",
+        "type": "str"
+      },
+      {
+        "label": "08",
+        "value": "08",
+        "type": "str"
+      },
+      {
+        "label": "09",
+        "value": "09",
+        "type": "str"
+      },
+      {
+        "label": "10",
+        "value": "10",
+        "type": "str"
+      },
+      {
+        "label": "11",
+        "value": "11",
+        "type": "str"
+      },
+      {
+        "label": "12",
+        "value": "12",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "mes",
+    "topicType": "str",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 120,
+    "y": 140,
+    "wires": [
+      [
+        "hist_salvar_mes"
+      ]
+    ]
+  },
+  {
+    "id": "hist_salvar_mes",
+    "type": "change",
+    "z": "b8051daff5d09381",
+    "name": "Salvar Mês",
+    "rules": [
+      {
+        "t": "set",
+        "p": "hist_mes",
+        "pt": "flow",
+        "to": "payload",
+        "tot": "msg"
+      }
+    ],
+    "x": 350,
+    "y": 140,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "hist_dropdown_dia",
+    "type": "ui-dropdown",
+    "z": "b8051daff5d09381",
+    "group": "ea716b26dddc358d",
+    "name": "Dropdown Dia",
+    "label": "Dia",
+    "order": 3,
+    "width": "4",
+    "height": "1",
+    "passthru": true,
+    "multiple": false,
+    "chips": false,
+    "clearable": false,
+    "options": [
+      {
+        "label": "01",
+        "value": "01",
+        "type": "str"
+      },
+      {
+        "label": "02",
+        "value": "02",
+        "type": "str"
+      },
+      {
+        "label": "03",
+        "value": "03",
+        "type": "str"
+      },
+      {
+        "label": "04",
+        "value": "04",
+        "type": "str"
+      },
+      {
+        "label": "05",
+        "value": "05",
+        "type": "str"
+      },
+      {
+        "label": "06",
+        "value": "06",
+        "type": "str"
+      },
+      {
+        "label": "07",
+        "value": "07",
+        "type": "str"
+      },
+      {
+        "label": "08",
+        "value": "08",
+        "type": "str"
+      },
+      {
+        "label": "09",
+        "value": "09",
+        "type": "str"
+      },
+      {
+        "label": "10",
+        "value": "10",
+        "type": "str"
+      },
+      {
+        "label": "11",
+        "value": "11",
+        "type": "str"
+      },
+      {
+        "label": "12",
+        "value": "12",
+        "type": "str"
+      },
+      {
+        "label": "13",
+        "value": "13",
+        "type": "str"
+      },
+      {
+        "label": "14",
+        "value": "14",
+        "type": "str"
+      },
+      {
+        "label": "15",
+        "value": "15",
+        "type": "str"
+      },
+      {
+        "label": "16",
+        "value": "16",
+        "type": "str"
+      },
+      {
+        "label": "17",
+        "value": "17",
+        "type": "str"
+      },
+      {
+        "label": "18",
+        "value": "18",
+        "type": "str"
+      },
+      {
+        "label": "19",
+        "value": "19",
+        "type": "str"
+      },
+      {
+        "label": "20",
+        "value": "20",
+        "type": "str"
+      },
+      {
+        "label": "21",
+        "value": "21",
+        "type": "str"
+      },
+      {
+        "label": "22",
+        "value": "22",
+        "type": "str"
+      },
+      {
+        "label": "23",
+        "value": "23",
+        "type": "str"
+      },
+      {
+        "label": "24",
+        "value": "24",
+        "type": "str"
+      },
+      {
+        "label": "25",
+        "value": "25",
+        "type": "str"
+      },
+      {
+        "label": "26",
+        "value": "26",
+        "type": "str"
+      },
+      {
+        "label": "27",
+        "value": "27",
+        "type": "str"
+      },
+      {
+        "label": "28",
+        "value": "28",
+        "type": "str"
+      },
+      {
+        "label": "29",
+        "value": "29",
+        "type": "str"
+      },
+      {
+        "label": "30",
+        "value": "30",
+        "type": "str"
+      },
+      {
+        "label": "31",
+        "value": "31",
+        "type": "str"
+      }
+    ],
+    "payload": "",
+    "topic": "dia",
+    "topicType": "str",
+    "className": "",
+    "typeIsComboBox": true,
+    "msgTrigger": "onChange",
+    "x": 120,
+    "y": 200,
+    "wires": [
+      [
+        "hist_salvar_dia"
+      ]
+    ]
+  },
+  {
+    "id": "hist_salvar_dia",
+    "type": "change",
+    "z": "b8051daff5d09381",
+    "name": "Salvar Dia",
+    "rules": [
+      {
+        "t": "set",
+        "p": "hist_dia",
+        "pt": "flow",
+        "to": "payload",
+        "tot": "msg"
+      }
+    ],
+    "x": 350,
+    "y": 200,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "hist_botao_buscar",
+    "type": "ui-button",
+    "z": "b8051daff5d09381",
+    "group": "ea716b26dddc358d",
+    "name": "Botão Buscar",
+    "label": "Buscar Dados",
+    "order": 4,
+    "width": "4",
+    "height": "1",
+    "emulateClick": false,
+    "tooltip": "",
+    "color": "",
+    "bgcolor": "",
+    "className": "",
+    "icon": "",
+    "iconPosition": "left",
+    "payload": "",
+    "payloadType": "str",
+    "topic": "",
+    "topicType": "str",
+    "buttonColor": "",
+    "textColor": "",
+    "iconColor": "",
+    "enableClick": true,
+    "enablePointerdown": false,
+    "pointerdownPayload": "",
+    "pointerdownPayloadType": "str",
+    "enablePointerup": false,
+    "pointerupPayload": "",
+    "pointerupPayloadType": "str",
+    "x": 120,
+    "y": 260,
+    "wires": [
+      [
+        "hist_prep_query"
+      ]
+    ]
+  },
+  {
+    "id": "hist_prep_query",
+    "type": "function",
+    "z": "b8051daff5d09381",
+    "name": "Preparar Query",
+    "func": "const ano = flow.get(\"hist_ano\");\nconst mes = flow.get(\"hist_mes\");\nconst dia = flow.get(\"hist_dia\");\n\nif (!ano || !mes || !dia) {\n    return [null, { payload: \"Selecione Ano, Mês e Dia.\" }];\n}\n\nconst dataInicio = new Date(Date.UTC(ano, mes - 1, dia, 0, 0, 0)).toISOString();\nconst dataFim = new Date(Date.UTC(ano, mes - 1, dia + 1, 0, 0, 0)).toISOString();\n\nconst pipeline = [\n    {\n        $match: {\n            timestamp_full: {\n                $gte: dataInicio,\n                $lt: dataFim\n            }\n        }\n    },\n    {\n        $project: {\n            hora: {\n                $hour: {\n                    $dateFromString: { dateString: \"$timestamp_full\" }\n                }\n            },\n            temperatura: 1,\n            umidade_ar: 1,\n            umidade_solo: 1,\n            luminosidade_lux: 1\n        }\n    },\n    {\n        $group: {\n            _id: \"$hora\",\n            temperatura_media: { $avg: \"$temperatura\" },\n            umidade_ar_media: { $avg: \"$umidade_ar\" },\n            umidade_solo_media: { $avg: \"$umidade_solo\" },\n            luminosidade_media: { $avg: \"$luminosidade_lux\" }\n        }\n    },\n    { $sort: { _id: 1 } }\n];\n\nmsg.collection = \"leituras_estufa\";\nmsg.mode = \"collection\";\nmsg.operation = \"aggregate\";\nmsg.payload = [pipeline];\nreturn [msg, null];",
+    "outputs": 2,
+    "x": 370,
+    "y": 260,
+    "wires": [
+      [
+        "hist_mongo_agg",
+        "hist_debug_pipeline"
+      ],
+      [
+        "4ea51a1195f5d698"
+      ]
+    ]
+  },
+  {
+    "id": "hist_mongo_agg",
+    "type": "mongodb4",
+    "z": "b8051daff5d09381",
+    "clientNode": "cf8bc730ecc7686e",
+    "mode": "collection",
+    "collection": "leituras_estufa",
+    "operation": "aggregate",
+    "output": "toArray",
+    "maxTimeMS": "",
+    "handleDocId": false,
+    "name": "Mongo (aggregate)",
+    "x": 650,
+    "y": 240,
+    "wires": [
+      [
+        "hist_formatar"
+      ]
+    ]
+  },
+  {
+    "id": "hist_formatar",
+    "type": "function",
+    "z": "b8051daff5d09381",
+    "name": "Formatar para Tabela",
+    "func": "let dados = msg.payload;\n\n// mongodb4 envia [[...]] então abrimos o array interno\nif (Array.isArray(dados) && Array.isArray(dados[0])) {\n    dados = dados[0];\n}\n\nif (!Array.isArray(dados)) {\n    msg.payload = [];\n    return msg;\n}\n\nmsg.payload = dados.map(l => ({\n    hora: l._id + \":00\",\n    temp_media: Number(l.temperatura_media.toFixed(2)),\n    umid_ar_media: Number(l.umidade_ar_media.toFixed(2)),\n    umid_solo_media: Number(l.umidade_solo_media.toFixed(2)),\n    lum_media: Number(l.luminosidade_media.toFixed(2))\n}));\n\nreturn msg;\n",
+    "outputs": 1,
+    "timeout": "",
+    "noerr": 0,
+    "initialize": "",
+    "finalize": "",
+    "libs": [],
+    "x": 940,
+    "y": 240,
+    "wires": [
+      [
+        "hist_tabela"
+      ]
+    ]
+  },
+  {
+    "id": "hist_tabela",
+    "type": "ui-table",
+    "z": "b8051daff5d09381",
+    "group": "e27247bc946e379d",
+    "name": "Tabela de Médias Horárias",
+    "label": "",
+    "order": 5,
+    "width": "0",
+    "height": "0",
+    "maxrows": "",
+    "autocols": false,
+    "showSearch": false,
+    "deselect": true,
+    "selectionType": "none",
+    "columns": [
+      {
+        "title": "Hora",
+        "key": "hora",
+        "keyType": "key",
+        "type": "text",
+        "width": "",
+        "align": "start"
+      },
+      {
+        "title": "Temp Média (°C)",
+        "key": "temp_media",
+        "keyType": "key",
+        "type": "text",
+        "width": "",
+        "align": "start"
+      },
+      {
+        "title": "Umidade Ar (%)",
+        "key": "umid_ar_media",
+        "keyType": "key",
+        "type": "text",
+        "width": "",
+        "align": "start"
+      },
+      {
+        "title": "Umidade Solo (%)",
+        "key": "umid_solo_media",
+        "keyType": "key",
+        "type": "text",
+        "width": "",
+        "align": "start"
+      },
+      {
+        "title": "Luminosidade (Lux)",
+        "key": "lum_media",
+        "keyType": "key",
+        "type": "text",
+        "width": "",
+        "align": "start"
+      }
+    ],
+    "mobileBreakpoint": "lg",
+    "mobileBreakpointType": "defaults",
+    "action": "replace",
+    "x": 1220,
+    "y": 240,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "hist_debug_pipeline",
+    "type": "debug",
+    "z": "b8051daff5d09381",
+    "name": "DEBUG Pipeline",
+    "active": false,
+    "tosidebar": true,
+    "x": 640,
+    "y": 180,
+    "wires": []
+  },
+  {
+    "id": "4ea51a1195f5d698",
+    "type": "ui-notification",
+    "z": "b8051daff5d09381",
+    "ui": "2c9a8ea54ef13060",
+    "position": "top right",
+    "colorDefault": true,
+    "color": "#000000",
+    "displayTime": "3",
+    "showCountdown": true,
+    "outputs": 1,
+    "allowDismiss": true,
+    "dismissText": "Close",
+    "allowConfirm": false,
+    "confirmText": "Confirm",
+    "raw": false,
+    "className": "",
+    "name": "",
+    "x": 610,
+    "y": 300,
+    "wires": [
+      []
+    ]
+  },
+  {
+    "id": "31c0c840e347033d",
+    "type": "global-config",
+    "env": [],
+    "modules": {
+      "@flowfuse/node-red-dashboard": "1.29.0",
+      "@breshinas/node-red-contrib-mongodb4": "3.2.1"
+    }
+  }
+]
