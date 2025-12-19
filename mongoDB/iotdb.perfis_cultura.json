@@ -1,0 +1,45 @@
+[{
+  "_id": {
+    "$oid": "68e66540a476fd22b00b0e57"
+  },
+  "nome_cultura": "Orquideas",
+  "temperatura_ideal_min_C": 20,
+  "temperatura_ideal_max_C": 28,
+  "umidade_ar_ideal_min_percent": 50,
+  "umidade_ar_ideal_max_percent": 70,
+  "umidade_solo_ideal_min_percent": 20,
+  "umidade_solo_ideal_max_percent": 60,
+  "luminosidade_ideal_min_lux": 5,
+  "luminosidade_ideal_max_lux": 150,
+  "last_updated": "2025-10-08T13:21:04.372Z"
+},
+{
+  "_id": {
+    "$oid": "691a242867c446dbafbdd646"
+  },
+  "nome_cultura": "Suculenta",
+  "temperatura_ideal_min_C": 15,
+  "temperatura_ideal_max_C": 35,
+  "umidade_ar_ideal_min_percent": 30,
+  "umidade_ar_ideal_max_percent": 100,
+  "umidade_solo_ideal_min_percent": 20,
+  "umidade_solo_ideal_max_percent": 90,
+  "luminosidade_ideal_min_lux": 0,
+  "luminosidade_ideal_max_lux": 200,
+  "last_updated": "2025-11-16T19:21:12.291Z"
+},
+{
+  "_id": {
+    "$oid": "6936f24f32e5c331c2d5b1ef"
+  },
+  "nome_cultura": "Flor",
+  "temperatura_ideal_min_C": 15,
+  "temperatura_ideal_max_C": 35,
+  "umidade_ar_ideal_min_percent": 20,
+  "umidade_ar_ideal_max_percent": 80,
+  "umidade_solo_ideal_min_percent": 5,
+  "umidade_solo_ideal_max_percent": 100,
+  "luminosidade_ideal_min_lux": 5000,
+  "luminosidade_ideal_max_lux": 200,
+  "last_updated": "2025-12-08T15:44:15.155Z"
+}]
